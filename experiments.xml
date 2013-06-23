@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<experiments-configuration>
+
+    <!-- Configuration info -->
+    <name>Sample configuration</name>
+    <version>22</version>
+    <tags>
+        <tag>testing</tag>
+        <tag>production</tag>
+    </tags>
+
+    <!-- Dimensions definition -->
+    <list name="dimensions">
+        <dimension id="1">
+            <name>Dim1</name>
+            <slots>100</slots>
+        </dimension>
+        <dimension id="2">
+            <name>Dim2</name>
+            <slots>2</slots>
+        </dimension>
+        <dimension id="3">
+            <name>Dim3</name>
+            <slots>4</slots>
+        </dimension>
+    </list>
+
+    <!-- Experiments definition -->
+    <list name="experiments">
+        <experiment id="1">
+            <name>Exp1</name>
+        </experiment>
+        <experiment id="2">
+            <name>Exp2</name>
+        </experiment>
+        <experiment id="3">
+            <name>Exp3</name>
+        </experiment>
+        <experiment id="4">
+            <name>Exp4</name>
+        </experiment>
+        <experiment id="5">
+            <name>Exp5</name>
+        </experiment>
+        <experiment id="6">
+            <name>Exp6</name>
+        </experiment>
+        <experiment id="7">
+            <name>Exp7</name>
+        </experiment>
+        <experiment id="8">
+            <name>Exp8</name>
+        </experiment>
+    </list>
+
+    <!-- Configuration entries -->
+    <list name="entries">
+        <entry>
+            <experiment>1</experiment>
+            <dimension>1</dimension>
+            <slot>1</slot>
+            <slot>2</slot>
+            <slot>3</slot>
+            <slot>100</slot>
+            <slot>100</slot>
+            <slot>99</slot>
+            <slot>88</slot>
+            <slot>60</slot>
+            <slot>50</slot>
+            <slot>35</slot>
+            <slot>10</slot>
+        </entry>
+        <entry>
+            <experiment>2</experiment>
+            <dimension>1</dimension>
+            <slot>5</slot>
+            <slot>50</slot>
+            <slot>80</slot>
+        </entry>
+        <entry>
+            <experiment>3</experiment>
+            <dimension>2</dimension>
+            <slot>1</slot>
+        </entry>
+        <entry>
+            <experiment>4</experiment>
+            <dimension>2</dimension>
+            <slot>2</slot>
+        </entry>
+        <entry>
+            <experiment>5</experiment>
+            <dimension>3</dimension>
+            <slot>1</slot>
+        </entry>
+        <entry>
+            <experiment>6</experiment>
+            <dimension>3</dimension>
+            <slot>2</slot>
+        </entry>
+        <entry>
+            <experiment>7</experiment>
+            <dimension>3</dimension>
+            <slot>4</slot>
+        </entry>
+    </list>
+
+</experiments-configuration>

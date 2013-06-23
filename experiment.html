@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name="author" content="Dubskiy Evgeniy" />
+        <title>Yandex Presentation</title>
+    </head>
+    <body>
+        <!-- jQuery Core -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+        <!-- Slot Manager -->
+        <script src="manager.js"></script>
+
+        <!-- Slot Drawer -->
+        <script src="drawer.js"></script>
+
+        <script>
+
+        (function() {
+
+            var manager = Object.create( Manager ),
+                drawer  = Object.create( Drawer );
+
+            manager.Init();
+
+            var xslDoc = manager.RenderXSL();
+
+            manager.AppendXSL(xslDoc);
+
+            drawer.Init(xslDoc, {});
+            drawer.Draw();
+
+        })();
+
+        </script>
+    </body>
+</html>

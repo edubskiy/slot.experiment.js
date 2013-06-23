@@ -1,0 +1,48 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.dimension {
+    text-align: center;
+    font-weight: bold;
+}
+
+div.experiment {
+    margin-top: 50px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.experiment-name {
+    margin-top: 50px;
+}
+
+.dimemsion-slots-row {
+    white-space: nowrap;
+    text-align: left;
+    list-style: none;
+}
+
+.dimemsion-slots-row li {
+    display: inline-block;
+}
+
+.dimension-info {
+    float: left;
+    display: inline-block;
+    height: 100%;
+}
+
+.dimension-data {
+    display: inline-block;
+}
+
+canvas {
+    display: block;
+}
+
+canvas.dimension-canvas {
+    display: block;
+    padding: 5px 0 5px 0;
+}
